@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feria de Emprendimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Marco exterior -->
+    <div class="marco-principal">
+
+        <!-- Barra superior de pestañas -->
+        <nav class="barra-pestanias">
+            <button class="btn-tab active" onclick="cambiarPestania(event, 'inicio')">Inicio</button>
+            <button class="btn-tab" onclick="cambiarPestania(event, 'emp1')">Emp 1</button>
+            <button class="btn-tab" onclick="cambiarPestania(event, 'emp2')">Emp 2</button>
+            <button class="btn-tab" onclick="cambiarPestania(event, 'emp3')">Emp 3</button>
+        </nav>
+
+        <!-- Área de contenido interior -->
+        <main class="contenedor-contenido">
+
+            <!-- Pestaña 1: Inicio / Carátula -->
+            <section id="inicio" class="seccion-contenido active">
+                <h1>Carátula de Presentación</h1>
+                <hr>
+                <div class="foto-caratula" style="text-align: center; margin-bottom: 15px;">
+                    <img src="caratula-foto.jpg" alt="Logo de la Institución" style="max-width: 150px;">
+                </div>
+                <div class="datos-caratula">
+                    <p><strong>Estudiante:</strong> MARTINEZ SERRUDO JHAIR MARVIN</p>
+                <p><strong>Carrera:</strong> SISTEMAS INFORMATICOS </p>
+                <p><strong>Materia:</strong> DISEÑO Y PROGRAMACION WEB</p>
+                <p><strong>Docente:</strong> HUGO ALFREDO TABORGA PAZ</p>
+                <p><strong>Fecha:</strong> 13/10/2026</p>
+                </div>
+            </section>
+
+            <!-- Pestaña 2: Emp 1 -->
+            <section id="emp1" class="seccion-contenido">
+                <h2>Emprendimiento 1</h2>
+                <div class="datos-stand">
+                    <p><strong>Nombre del emprendimiento:</strong> Snakers & Kicks</p>
+                    <p><strong>Dirección / Ubicación:</strong> Stand N° 12 - Pasillo Central</p>
+                    <p><strong>¿Qué venden?:</strong> Tenis y zapatillas urbanas importadas de colección, además de accesorios de limpieza para calzado.</p>
+                </div>
+                <h3>Fotografías del Stand</h3>
+                <div class="galeria-fotos">
+                    <div class="foto-item">
+                        <img src="stand1-foto1.jpg" alt="Foto del Stand 1">
+                        <p>Fotografía del Stand</p>
+                    </div>
+                    <div class="foto-item">
+                        <img src="stand1-estudiante.jpg" alt="Mi foto en el Stand 1">
+                        <p>Fotografía mía en el Stand</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestaña 3: Emp 2 -->
+            <section id="emp2" class="seccion-contenido">
+                <h2>Emprendimiento 2</h2>
+                <div class="datos-stand">
+                    <p><strong>Nombre del emprendimiento:</strong> EcoDetalles & Regalos</p>
+                    <p><strong>Dirección / Ubicación:</strong> Stand N° 05 - Área de Artesanías</p>
+                    <p><strong>¿Qué venden?:</strong> Termos personalizados, tazas térmicas, agendas artesanales y accesorios ecológicos.</p>
+                </div>
+                <h3>Fotografías del Stand</h3>
+                <div class="galeria-fotos">
+                    <div class="foto-item">
+                        <img src="stand2-foto1.jpg" alt="Foto del Stand 2">
+                        <p>Fotografía del Stand</p>
+                    </div>
+                    <div class="foto-item">
+                        <img src="stand2-estudiante.jpg" alt="Mi foto en el Stand 2">
+                        <p>Fotografía mía en el Stand</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestaña 4: Emp 3 -->
+            <section id="emp3" class="seccion-contenido">
+                <h2>Emprendimiento 3</h2>
+                <div class="datos-stand">
+                    <p><strong>Nombre del emprendimiento:</strong> Libera Tu Voz - Escuela de Canto y Belleza</p>
+                    <p><strong>Dirección / Ubicación:</strong> Stand N° 08 - Sector Educación y Servicios</p>
+                    <p><strong>¿Qué venden?:</strong> Cursos y talleres de técnica vocal, canto e interpretación musical, además de productos cosméticos y cuidado personal.</p>
+                </div>
+                <h3>Fotografías del Stand</h3>
+                <div class="galeria-fotos">
+                    <div class="foto-item">
+                        <img src="stand3-foto1.jpg" alt="Foto del Stand 3">
+                        <p>Fotografía del Stand</p>
+                    </div>
+                    <div class="foto-item">
+                        <img src="stand3-estudiante.jpg" alt="Mi foto en el Stand 3">
+                        <p>Fotografía mía en el Stand</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
